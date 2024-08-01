@@ -1,20 +1,20 @@
 import React from "react";
 import './header.css';
+import profileIcon from '../../assets/logo/face-icon.png'
 import logoColor from '../../assets/logo/png/logo-color.png';
+import heartIcon from '../../assets/logo/heart-icon.png'
 // icons
-import { MdOutlineMessage } from "react-icons/md";
 import { IoMdHeartEmpty } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
 import { FaArrowTurnDown } from "react-icons/fa6";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="container header-container">
-        <img src={logoColor} className="header__logo" alt="logo" />+
+        <img src={logoColor} className="header__logo icon-logo" alt="logo" />+
         <div className="header__panel">
-          <a href="#" className="header__link">
-            <MdOutlineMessage />
+          <a href="#" className="header__link" >
+            <img src={heartIcon} alt="heart-icon" className="icon"/>
             <span>Messages</span>
           </a>
           <ul className="language__list">
@@ -23,11 +23,11 @@ const Header = () => {
           </ul>
           <IoMdHeartEmpty />
           <div className="header__profile">
-            <CgProfile />
+          <img src={profileIcon} alt="profile-icon" className="icon"/>
             <span>Your profile</span>
             <FaArrowTurnDown />
           </div>
-          <button>Post an advertisement</button>
+          <a href="/"><button class="bn30">Place an advertisement</button></a>
         </div>
       </div>
     </header>

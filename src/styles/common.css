@@ -8,6 +8,10 @@ span, li{
   color: whitesmoke;
 }
 
+span, li {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+}
 body {
   font-family: "poppins", sans-serif !important;
   /* background-color: black; */
